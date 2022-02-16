@@ -6,4 +6,6 @@ function reducer(state=data, action){
     return state;
 }
 
-export  const Store =createStore(reducer);
+export const Store =createStore(reducer);
+export default reducer;
+
