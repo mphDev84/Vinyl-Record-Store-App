@@ -1,3 +1,5 @@
+An E-Commerce site built using React, a little Bootstrap, and Redux! This is a work-in-progress, still buggy and not deployment-ready, but I'm getting there!
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
