@@ -123,6 +123,7 @@ textarea{
   font-family: 'Courier New', Courier, monospace;
   font-weight: 800;
   font-size: 2em;
+  border-bottom: 2px solid black;
 }
 .record-edit{
   display: flex;

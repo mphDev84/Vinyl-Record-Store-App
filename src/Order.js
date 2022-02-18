@@ -5,11 +5,18 @@ import PropTypes from 'prop-types';
 
 const Order = ({index, cart, data, removeFromOrder})=>{
 
-        const orderData = index;
-       const count = cart[index];
+    //Prop-type data validation
+    Order.propTypes ={
+        data: PropTypes.object.isRequired,
+        cart:PropTypes.object.isRequired,
+        index: PropTypes.string.isRequired,
+        removeFromOrder: PropTypes.func.isRequired
+    };
+    const orderData = index;
+    const count = cart[index];
        
-        const orderRecord  = data[orderData];
-        const isAvailable=orderRecord;
+    const orderRecord  = data[orderData];
+    const isAvailable=orderRecord;
 
         if (!orderRecord)return null;
         if (!isAvailable){

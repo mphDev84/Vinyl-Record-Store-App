@@ -9,6 +9,7 @@ import OrderTotal from "./OrderTotal";
 import { Store } from "./Store";
 import { createStore }from "redux";
 import reducer from "./Store";
+import PropTypes from 'prop-types';
 
 /**THIS IS THE MAIN APP.js from which the Order, Inventory, and Record components are rendered. */
 
@@ -47,12 +48,15 @@ useEffect(()=>{
     localStorage.setItem("my-order-data", JSON.stringify(cart))
 },[cart]);
 
-//loads a data set for a collection of records to the store
+//Prop-type data validation:
+App.propTypes ={
+    data: PropTypes.object.isRequired,
+    cart:PropTypes.object.isRequired
+};
 const loadRecords = ()=>{
-
+//loads a data set for a collection of records to the store
 setData(myRecords);
-
- };
+};
 
 //method to add a record to the collection
  const addRecord=(record)=>{
@@ -75,7 +79,7 @@ setData(myRecords);
     //1.Take a copy of state:
     const order = {...cart};
     //2.remove this item from order
-    delete order[key]; // increments count of whatever record is in order. We can use delete because no Firebase here, we use local storage
+    delete order[key]; // increments count of whatever record is in order. 
     //3. call setState to update order state
     setCart(order);
 };
