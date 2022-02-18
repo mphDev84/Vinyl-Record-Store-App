@@ -15,7 +15,7 @@ updateRecord(index, updatedRecord);//update record and send data up to App.js
 };
 
   return  (
-  <React.Fragment>
+ 
   <div className='record-edit'>
   {/**Here, our inputs have values set to the STATE values, in App.js. If a change is made
   the onChange method kicks in, but react prevents any changes to STATE. See above */}    
@@ -25,8 +25,7 @@ updateRecord(index, updatedRecord);//update record and send data up to App.js
   <input className="edit-form-inputs" type="text" name="id" onChange={handleChange} value={data[index].id} />
   <button id="remove-button" className="btn btn-danger" onClick={()=>removeRecord(index)}>Remove Record</button>
   </div>
-  <button id="remove-button" className="btn btn-danger" onClick={()=>removeRecord(index)}>Remove Record</button>
-  </React.Fragment>
+
   )
 };
 

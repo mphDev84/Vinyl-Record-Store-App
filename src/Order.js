@@ -26,11 +26,11 @@ const Order = ({index, cart, data, removeFromOrder})=>{
             <li index={index}>
             <div className='order-area'>
             <p className='order-count'>
-            <strong>{`${count}`}</strong></p>
+            <strong>{`${count}x`}</strong></p>
             <p className='order-name'>
             {`${orderRecord.name}`}</p>
-            <p className='order-price'>
-            {`Price: ${formatPrice(orderRecord.price*count)}`}</p>
+            <p className='order-price'>Price: 
+            <strong>{` ${formatPrice(orderRecord.price*count)}`}</strong></p>
             <button className='remove-button' onClick={()=>removeFromOrder(index)}>&times;</button>
             <br></br>
             </div>

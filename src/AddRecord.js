@@ -36,7 +36,7 @@ const AddRecord = ({addRecord})=>{
      e.currentTarget.reset();
     }
         return (
-
+            
             <form className="addRecordForm" onSubmit={createRecord}>
             <div className="form-div-01">
             <input name="name" ref={nameRef} type="text" placeholder="Name" />
@@ -55,7 +55,7 @@ const AddRecord = ({addRecord})=>{
             <button className="btn btn-dark" type="submit">Add Record</button>
             </div>
             </form>
-
+            
         )
 };
 

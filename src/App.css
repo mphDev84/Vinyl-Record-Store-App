@@ -143,31 +143,27 @@ textarea{
   border-radius: 5px;
   overflow-y: scroll;
   height: 500px;
-  font-family: 'Courier New', Courier, monospace;
-  font-weight: 600;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  
 }
 .order-area{
   display: flex;
   flex-direction: row;
   width:20em;
-  justify-content:start;
+  justify-content:space-between;
 }
 .order-name{
   margin-left:20px;
-  border: solid 1px red;
 }
 .order-count{
- border: solid 1px red;
- 
+ margin-left:10px;
 }
 .order-price{
-  margin-left:10px;
-  border: solid 1px red;
+  margin-left:20px;
 }
 .order-total{
-  margin-left:10px;
-  border: solid 1px red;
-  
+  padding-top:10px;
+  border-top: solid 2px black;
 }
 .remove-button{
   background: none;
