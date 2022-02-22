@@ -1,0 +1,239 @@
+.App {
+  text-align: center;
+}
+li{
+  list-style: none;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+body{
+  background-color: lightblue;
+}
+.genre-selector-div{
+  display: flex;
+  justify-content: center;
+  margin-top: 100px;
+}
+.App-header {
+  height: 7em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(30px + 2vmin);
+  color: rgb(255, 251, 252);
+}
+.Header-Span{
+  color:rgb(214, 9, 9);
+  font-size: 20px;
+}
+.welcome-div{
+  background-color: lightblue;
+}
+.main-page-div{
+  display:flex;
+  flex-direction: row;
+  justify-content:space-between;
+  justify-items: stretch;
+}
+.header-div{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+#header-button{
+  width:200px;
+  align-self: center;
+  margin-left:20px;
+}
+#header-button:hover{
+  transform: scale(1.15);
+  background-color: rgb(4, 114, 99);
+}
+.header-background{
+  background-image: url('/public/recordStore.jpg')
+}
+.button-div{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.addRecordForm{
+  display: flex;
+  flex-direction: row;
+  margin-top:20px;
+  justify-content:end;
+  visibility: hidden;
+}
+input{
+  height:40px;
+}
+textarea{
+  height:65px;
+}
+.form-div-01{
+  display: flex;
+  flex-direction: column;
+  width:15em;
+  justify-content: start;
+  margin-top: 20px;
+  
+}
+.form-div-02{
+  display: flex;
+  flex-direction: column;
+  width:20em;
+  margin-top: 20px;
+
+}
+.records{
+  list-style:none;
+  background-color: rgb(248, 186, 186);
+  width:580px;
+  overflow-y: scroll;
+  height: 500px;
+  border-radius: 5px;
+}
+.record-name{
+  width:130px;
+  word-wrap: break-word;
+}
+.record-list{
+  margin-top: 20px;
+}
+.records-display{
+  display: flex;
+  flex-direction: column;
+  align-items:flex-start;
+  text-align: start;
+  width:538px;
+}
+.inventory-div{
+  width:10em;
+  background-color: rgb(209, 238, 252);
+  width:370px;
+  border-radius: 5px;
+  overflow-y: scroll;
+  height: 500px;
+  visibility: hidden;
+}
+.inv-order-span{
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: 800;
+  font-size: 2em;
+  border-bottom: 2px solid black;
+}
+.record-edit{
+  display: flex;
+  flex-direction: column;
+  font-family: monospace;
+}
+.edit-form-inputs{
+  font-style: bold;
+}
+#remove-button{
+  margin-bottom: 20px;
+}
+.order-div{
+  position: relative;
+  width:340px;
+  background-color: rgb(209, 238, 252);
+  position: relative;
+  border-radius: 5px;
+  overflow-y: scroll;
+  height: 500px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  
+}
+.order-area{
+  display: flex;
+  flex-direction: row;
+  width:20em;
+  justify-content:space-between;
+}
+.order-name{
+  margin-left:20px;
+}
+.order-count{
+ margin-left:10px;
+}
+.order-price{
+  margin-left:20px;
+}
+.order-total{
+  padding-top:10px;
+  border-top: solid 2px black;
+}
+.checkout-div{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 70px;
+  background-color: rgb(142, 199, 252);
+  border-radius:10px;
+}
+.checkout-header{
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  padding-bottom: 15px;
+}
+.checkout-address-header{
+  text-align: left;
+  font-size: 1.2em;
+}
+.checkout-address{
+  background-color: #fdb1b1;
+  border-radius: 10px;
+  width:15em;
+  text-align: center;
+  margin-bottom:20px;
+}
+.form-radios{
+  display: grid;
+gap:1em;
+margin-bottom:20px;
+}
+.form-radio{
+  align-items: center;
+  background-color: #fefdfe;
+  border-radius: 10px;
+  box-shadow: 0 0 1em rgba(0, 0, 0, 0.0625);
+  display: flex;
+  height:50px;
+  justify-content: space-between;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+#buy-button{
+  margin-top: 20px;
+  width:15em;
+}
+.remove-button{
+  background: none;
+  border:none;
+  cursor:pointer;
+  align-items: baseline;
+  margin-left: 10px;
+}
+.pic-div{
+  display: flex;
+  flex-direction: row;
+}
+.image{
+  margin-left: 20px;
+  margin-bottom: 10px;
+  height: 12em;
+}
+.App-link {
+  color: #61dafb;
+}
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
