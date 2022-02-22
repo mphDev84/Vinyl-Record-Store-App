@@ -118,6 +118,7 @@ textarea{
   border-radius: 5px;
   overflow-y: scroll;
   height: 500px;
+  visibility: hidden;
 }
 .inv-order-span{
   font-family: 'Courier New', Courier, monospace;
@@ -165,6 +166,49 @@ textarea{
 .order-total{
   padding-top:10px;
   border-top: solid 2px black;
+}
+.checkout-div{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 70px;
+  background-color: rgb(142, 199, 252);
+  border-radius:10px;
+}
+.checkout-header{
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  padding-bottom: 15px;
+}
+.checkout-address-header{
+  text-align: left;
+  font-size: 1.2em;
+}
+.checkout-address{
+  background-color: #fdb1b1;
+  border-radius: 10px;
+  width:15em;
+  text-align: center;
+  margin-bottom:20px;
+}
+.form-radios{
+  display: grid;
+gap:1em;
+margin-bottom:20px;
+}
+.form-radio{
+  align-items: center;
+  background-color: #fefdfe;
+  border-radius: 10px;
+  box-shadow: 0 0 1em rgba(0, 0, 0, 0.0625);
+  display: flex;
+  height:50px;
+  justify-content: space-between;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+#buy-button{
+  margin-top: 20px;
+  width:15em;
 }
 .remove-button{
   background: none;

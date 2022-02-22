@@ -6,6 +6,7 @@ import AddRecord from "./AddRecord";
 import Order from "./Order";
 import Inventory from "./Inventory";
 import OrderTotal from "./OrderTotal";
+import CheckoutForm from "./CheckoutForm";
 import { Store } from "./Store";
 import { createStore }from "redux";
 import reducer from "./Store";
@@ -50,7 +51,7 @@ useEffect(()=>{
 
 //Prop-type data validation:
 App.propTypes ={
-    data: PropTypes.object.isRequired,
+    data: PropTypes.object,
     cart:PropTypes.object.isRequired
 };
 const loadRecords = ()=>{
@@ -139,6 +140,10 @@ const removeRecord = (key)=>{
             <OrderTotal 
            // orderTotal={orderTotal}
             
+            cart={cart}
+            data = {data}
+            />
+            <CheckoutForm 
             cart={cart}
             data = {data}
             />

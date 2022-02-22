@@ -5,17 +5,18 @@ import PropTypes from 'prop-types';
 const Header = ({loadRecords, tagline, data, myStoreId})=> { 
 
       
-        const viewForm =()=>{
+    const viewForm =()=>{
          const myPass= prompt('enter password');
           if (myPass ==="pass"){
             const x = document.querySelector(".addRecordForm");
-         return x.style.visibility="visible";
+            const y = document.querySelector(".inventory-div");
+         return x.style.visibility="visible", y.style.visibility="visible";
           }else{
               return alert("you are not authorized!");
           }
             
-        };
-
+    };
+    
     return (
     <div className='welcome-div'>
     <div className='header-background'>
@@ -28,7 +29,7 @@ const Header = ({loadRecords, tagline, data, myStoreId})=> {
     <span className='Header-Span'>{`Welcome to the ${myStoreId} Store! ${tagline}`}</span><br></br>
     <div className='button-div'>
     <button id="header-button" className='btn btn-primary' onClick={loadRecords}>Load Record Collection</button><br></br>
-    <button id="header-button" className='btn btn-info' onClick={viewForm}>Click to add record</button><br></br>
+    <button id="header-button" className='btn btn-info' onClick={viewForm}>Add/Delete record</button><br></br>
     </div>
     </div>
     </div>
