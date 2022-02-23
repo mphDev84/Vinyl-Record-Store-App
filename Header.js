@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-
+import LoginButton from './LoginButton';
 
 const Header = ({loadRecords, tagline, data, myStoreId})=> { 
 
@@ -30,6 +30,7 @@ const Header = ({loadRecords, tagline, data, myStoreId})=> {
     <div className='button-div'>
     <button id="header-button" className='btn btn-primary' onClick={loadRecords}>Load Record Collection</button><br></br>
     <button id="header-button" className='btn btn-info' onClick={viewForm}>Add/Delete record</button><br></br>
+    <LoginButton />
     </div>
     </div>
     </div>
