@@ -1,4 +1,5 @@
-An E-Commerce site built using React, a little Bootstrap, and Redux! This is a work-in-progress, still buggy and not deployment-ready, but I'm getting there!
+An E-Commerce site built using React, a little Bootstrap, and Redux! This is a work-in-progress, but I'm getting there! Live demo:
+https://ubiquitous-longma-3686ed.netlify.app/
 
 # Getting Started with Create React App
 
